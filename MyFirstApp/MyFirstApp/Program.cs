@@ -38,3 +38,7 @@ static int ZnajdzMaksymalnaWartosc(int[] tablica)
 
     return maks;
 }
+
+int[] liczby = { 1, 3, 5, 7, 9, 2, 4, 6, 8, 0 };
+int maksymalnaWartosc = ZnajdzMaksymalnaWartosc(liczby);
+Console.WriteLine($"Maksymalna wartość w tablicy to: {maksymalnaWartosc}");
