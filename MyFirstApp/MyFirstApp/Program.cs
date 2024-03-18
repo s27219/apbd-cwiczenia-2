@@ -19,3 +19,22 @@ static double GetAverage(int[] numbers)
 int[] numbers = {1,2,3,4};
 double average = GetAverage(numbers);
 Console.WriteLine(average);
+
+static int ZnajdzMaksymalnaWartosc(int[] tablica)
+{
+    if (tablica == null || tablica.Length == 0)
+    {
+        throw new ArgumentException("Tablica jest pusta lub null.");
+    }
+
+    int maks = tablica[0];
+    for (int i = 1; i < tablica.Length; i++)
+    {
+        if (tablica[i] > maks)
+        {
+            maks = tablica[i];
+        }
+    }
+
+    return maks;
+}
